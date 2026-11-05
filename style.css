@@ -1,0 +1,493 @@
+/* =========================================================
+   Stentrode · hoja de estilos única
+   Fundamentos de Interacción Persona-Ordenador
+
+   Paleta usada en toda la hoja:
+     #f2f4f7  fondo (blanco clínico)
+     #ffffff  blanco
+     #14213d  azul noche (texto)
+     #4a5470  gris azulado (texto secundario)
+     #3b2f8f  índigo venoso (títulos y la línea temporal)
+     #c2185b  magenta (la señal neuronal, se usa poco)
+     #fbe9f0  magenta muy claro
+     #e3e6f2  gris lila (bordes y fondos suaves)
+   ========================================================= */
+
+/* ---------- 1. Base ---------- */
+* {
+  box-sizing: border-box; /* el padding y el borde no ensanchan la caja (práctica 2) */
+}
+
+html {
+  scroll-padding-top: 4.5rem; /* el menú pegado no tapa los títulos al saltar (práctica 4) */
+}
+
+body {
+  margin: 0;
+  font-family: "Atkinson Hyperlegible Next", Verdana, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #14213d;
+  background-color: #f2f4f7;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.15;
+  color: #3b2f8f;
+}
+
+h2 {
+  font-size: 2.6rem;
+  margin: 0 0 1.25rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin: 2.5rem 0 0.75rem;
+}
+
+p {
+  margin: 0 0 1rem;
+  max-width: 42rem; /* líneas cortas, más fáciles de leer */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ---------- 2. Enlaces y foco ---------- */
+a {
+  color: #3b2f8f;
+}
+
+a:hover {
+  color: #c2185b;
+}
+
+a:focus-visible {
+  outline: 3px solid #c2185b;
+  outline-offset: 3px;
+}
+
+/* enlace «Saltar al contenido»: escondido hasta que recibe el foco (práctica 4, paso 0) */
+.saltar {
+  position: absolute;
+  top: -4rem;
+  left: 1rem;
+  z-index: 20;
+  padding: 0.5rem 1rem;
+  background-color: #14213d;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.saltar:focus {
+  top: 1rem;
+}
+
+/* ---------- 3. Cabecera ---------- */
+.cabecera {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem 4rem;
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 3.5rem;
+}
+
+.cabecera__texto {
+  flex: 1 1 26rem;
+}
+
+.cabecera__ilustracion {
+  flex: 1 1 20rem;
+  width: 20rem; /* punto de partida; flex-grow la estira hasta el max-width */
+  max-width: 34rem;
+}
+
+h1 {
+  font-size: 7.5rem;
+  font-weight: 800;
+  line-height: 0.95;
+  margin: 0 0 1.5rem;
+}
+
+.lema {
+  font-size: 1.6rem;
+  line-height: 1.35;
+  font-weight: bold;
+  max-width: 30rem;
+}
+
+.estado {
+  margin-top: 1.75rem;
+  padding-left: 1rem;
+  border-left: 4px solid #c2185b;
+  color: #4a5470;
+}
+
+.estado strong {
+  color: #14213d;
+}
+
+/* ---------- 4. Menú que se queda arriba al hacer scroll (práctica 4) ---------- */
+.menu {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #ffffff; /* opaco: si no, el contenido se ve a través */
+  border-bottom: 2px solid #3b2f8f;
+}
+
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem 1.75rem;
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0.85rem 1.5rem;
+  list-style: none;
+}
+
+.menu a {
+  color: #14213d;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.25rem 0;
+  border-bottom: 3px solid transparent;
+}
+
+.menu a:hover {
+  color: #3b2f8f;
+  border-bottom-color: #c2185b;
+}
+
+/* ---------- 5. Secciones ---------- */
+.seccion {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 4.5rem 1.5rem;
+  border-top: 1px solid #e3e6f2;
+}
+
+/* ---------- 6. Ficha técnica (lista de definiciones dl) ---------- */
+.ficha {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.75rem 2.5rem;
+  margin: 2.5rem 0 0;
+}
+
+.ficha div {
+  flex: 1 1 15rem;
+  padding-left: 1rem;
+  border-left: 4px solid #3b2f8f;
+}
+
+.ficha dt {
+  font-size: 0.95rem;
+  color: #4a5470;
+}
+
+.ficha dd {
+  margin: 0.15rem 0 0;
+  font-weight: bold;
+  line-height: 1.35;
+}
+
+/* ---------- 7. Lista de beneficios ---------- */
+.beneficios {
+  max-width: 42rem;
+  padding-left: 1.25rem;
+}
+
+.beneficios li {
+  margin-bottom: 0.9rem;
+  padding-left: 0.25rem;
+}
+
+/* ---------- 8. Tablas (práctica 2) ---------- */
+.tabla-con-scroll {
+  overflow-x: auto; /* en el móvil la tabla se desplaza dentro de su caja */
+  margin: 0 0 1.5rem;
+}
+
+table {
+  width: 100%;
+  min-width: 36rem;
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+
+.comparativa {
+  min-width: 46rem;
+}
+
+caption {
+  caption-side: top;
+  text-align: left;
+  color: #4a5470;
+  font-size: 0.95rem;
+  padding-bottom: 0.75rem;
+}
+
+th,
+td {
+  padding: 0.9rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e3e6f2;
+}
+
+thead th {
+  color: #3b2f8f;
+  border-bottom: 2px solid #14213d;
+}
+
+tbody th[scope="row"] {
+  width: 16rem;
+}
+
+.comparativa__destacada {
+  background-color: #fbe9f0;
+}
+
+.comparativa__destacada th[scope="row"] {
+  color: #c2185b;
+}
+
+/* ---------- 9. Cómo funciona: pasos + diagrama (Flexbox) ---------- */
+.funcionamiento {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 2rem 4rem;
+}
+
+.pasos {
+  flex: 1 1 22rem;
+  margin: 0;
+  padding-left: 1.75rem;
+  font-weight: bold; /* también pone en negrita el número de cada paso */
+  color: #3b2f8f;
+}
+
+.pasos li {
+  margin-bottom: 1.5rem;
+  padding-left: 0.5rem;
+}
+
+.pasos h3 {
+  margin: 0 0 0.35rem;
+}
+
+.pasos p {
+  font-weight: normal;
+  color: #14213d;
+}
+
+.diagrama {
+  flex: 1 1 22rem;
+  margin: 0;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border: 1px solid #e3e6f2;
+  border-radius: 12px;
+}
+
+/* ---------- 10. Imágenes ---------- */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.galeria figure {
+  flex: 1 1 20rem;
+  margin: 0;
+}
+
+.galeria img {
+  width: 100%;
+  background-color: #e3e6f2;
+  border-radius: 12px;
+}
+
+figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.95rem;
+  color: #4a5470;
+}
+
+/* ---------- 11. Línea temporal: una vena que recorre la historia ---------- */
+.cronologia {
+  max-width: 50rem;
+  margin: 3rem 0 3.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+/* cada hecho: el año a la izquierda y el texto a la derecha */
+.cronologia li {
+  position: relative; /* referencia para colocar el nodo (práctica 4) */
+  display: flex;
+}
+
+.anio {
+  flex: 0 0 7rem;
+  margin: 0;
+  padding-right: 1.5rem;
+  font-size: 1.35rem;
+  font-weight: 800;
+  text-align: right;
+  color: #4a5470;
+}
+
+/* la vena: el borde izquierdo de cada hecho, que se une con el siguiente */
+.hecho {
+  flex: 1 1 auto;
+  padding: 0 0 2.25rem 2rem;
+  border-left: 6px solid #3b2f8f;
+}
+
+.hecho h3 {
+  margin: 0 0 0.35rem;
+  color: #14213d;
+}
+
+.hecho p {
+  margin: 0;
+}
+
+/* el nodo: un círculo colocado sobre la vena */
+.nodo {
+  position: absolute;
+  top: 0.45rem;
+  left: 6.6rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background-color: #f2f4f7;
+  border: 4px solid #3b2f8f;
+}
+
+/* los hitos del Stentrode: aquí la señal se enciende */
+.hito .nodo {
+  background-color: #c2185b;
+  border-color: #c2185b;
+  box-shadow: 0 0 0 6px #fbe9f0;
+}
+
+.hito .anio,
+.hito h3 {
+  color: #c2185b;
+}
+
+/* ---------- 12. Más información ---------- */
+.enlaces {
+  max-width: 42rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.enlaces li {
+  padding: 1.1rem 0;
+  border-top: 1px solid #e3e6f2;
+}
+
+.enlaces a {
+  font-weight: bold;
+  font-size: 1.15rem;
+}
+
+.enlaces p {
+  margin: 0.3rem 0 0;
+  color: #4a5470;
+}
+
+/* ---------- 13. Pie ---------- */
+.pie {
+  padding: 3rem 1.5rem;
+  background-color: #14213d;
+  color: #ffffff;
+}
+
+.pie p {
+  max-width: 72rem;
+  margin: 0 auto 0.5rem;
+  padding: 0 1.5rem;
+  font-size: 0.95rem;
+}
+
+.pie a {
+  color: #ffffff;
+}
+
+.pie a:focus-visible {
+  outline-color: #ffffff;
+}
+
+/* ---------- 14. Pantallas estrechas (práctica 4, paso 11) ---------- */
+@media (max-width: 56rem) {
+  .menu {
+    position: static; /* el menú ocupa varias líneas: mejor no pegarlo */
+  }
+
+  html {
+    scroll-padding-top: 0;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 40rem) {
+  h1 {
+    font-size: 3.75rem;
+  }
+
+  h2 {
+    font-size: 1.9rem;
+  }
+
+  .lema {
+    font-size: 1.3rem;
+  }
+
+  .cabecera {
+    padding-top: 2.5rem;
+  }
+
+  .seccion {
+    padding: 3.5rem 1.25rem;
+  }
+
+  /* en el móvil el año pasa encima del texto */
+  .cronologia li {
+    flex-direction: column;
+    padding-left: 0.5rem;
+    border-left: 6px solid #3b2f8f;
+  }
+
+  .anio {
+    flex-basis: auto;
+    padding: 0 0 0 1.5rem;
+    text-align: left;
+  }
+
+  .hecho {
+    padding-left: 1.5rem;
+    border-left: none;
+  }
+
+  .nodo {
+    left: -0.8rem;
+  }
+}

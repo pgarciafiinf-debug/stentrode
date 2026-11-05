@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 64 640 192" role="img" aria-labelledby="t d">
+<title id="t">Ilustración del Stentrode</title><desc id="d">Malla cilíndrica de nitinol con 16 electrodos; la señal que captan se convierte en un clic sobre una tableta.</desc>
+<defs><clipPath id="tubo"><rect x="40" y="100" width="380" height="120" rx="10"/></clipPath></defs>
+<rect x="10" y="78" width="440" height="164" rx="70" fill="#E3E6F2"/>
+<g clip-path="url(#tubo)" stroke="#8A94A6" stroke-width="2.5" stroke-linecap="round"><line x1="-160" y1="100" x2="-100.0" y2="220"/><line x1="-160" y1="220" x2="-100.0" y2="100"/><line x1="-120" y1="100" x2="-60.0" y2="220"/><line x1="-120" y1="220" x2="-60.0" y2="100"/><line x1="-80" y1="100" x2="-20.0" y2="220"/><line x1="-80" y1="220" x2="-20.0" y2="100"/><line x1="-40" y1="100" x2="20.0" y2="220"/><line x1="-40" y1="220" x2="20.0" y2="100"/><line x1="0" y1="100" x2="60.0" y2="220"/><line x1="0" y1="220" x2="60.0" y2="100"/><line x1="40" y1="100" x2="100.0" y2="220"/><line x1="40" y1="220" x2="100.0" y2="100"/><line x1="80" y1="100" x2="140.0" y2="220"/><line x1="80" y1="220" x2="140.0" y2="100"/><line x1="120" y1="100" x2="180.0" y2="220"/><line x1="120" y1="220" x2="180.0" y2="100"/><line x1="160" y1="100" x2="220.0" y2="220"/><line x1="160" y1="220" x2="220.0" y2="100"/><line x1="200" y1="100" x2="260.0" y2="220"/><line x1="200" y1="220" x2="260.0" y2="100"/><line x1="240" y1="100" x2="300.0" y2="220"/><line x1="240" y1="220" x2="300.0" y2="100"/><line x1="280" y1="100" x2="340.0" y2="220"/><line x1="280" y1="220" x2="340.0" y2="100"/><line x1="320" y1="100" x2="380.0" y2="220"/><line x1="320" y1="220" x2="380.0" y2="100"/><line x1="360" y1="100" x2="420.0" y2="220"/><line x1="360" y1="220" x2="420.0" y2="100"/><line x1="400" y1="100" x2="460.0" y2="220"/><line x1="400" y1="220" x2="460.0" y2="100"/><line x1="440" y1="100" x2="500.0" y2="220"/><line x1="440" y1="220" x2="500.0" y2="100"/><line x1="480" y1="100" x2="540.0" y2="220"/><line x1="480" y1="220" x2="540.0" y2="100"/><line x1="520" y1="100" x2="580.0" y2="220"/><line x1="520" y1="220" x2="580.0" y2="100"/><line x1="560" y1="100" x2="620.0" y2="220"/><line x1="560" y1="220" x2="620.0" y2="100"/><line x1="600" y1="100" x2="660.0" y2="220"/><line x1="600" y1="220" x2="660.0" y2="100"/></g>
+<g fill="none" stroke="#3B2F8F" stroke-width="3"><line x1="40" y1="100" x2="420" y2="100"/><line x1="40" y1="220" x2="420" y2="220"/></g>
+<circle cx="70.0" cy="132.0" r="7" fill="#C2185B" stroke="#fff" stroke-width="2"/>
+<circle cx="110.0" cy="132.0" r="7" fill="#C2185B" stroke="#fff" stroke-width="2"/>
+<circle cx="150.0" cy="132.0" r="7" fill="#C2185B" stroke="#fff" stroke-width="2"/>
+<circle cx="190.0" cy="132.0" r="7" fill="#C2185B" stroke="#fff" stroke-width="2"/>
+<circle cx="230.0" cy="132.0" r="7" fill="#C2185B" stroke="#fff" stroke-width="2"/>
+<circle cx="270.0" cy="132.0" r="7" fill="#C2185B" stroke="#fff" stroke-width="2"/>
+<circle cx="310.0" cy="132.0" r="7" fill="#C2185B" stroke="#fff" stroke-width="2"/>
+<circle cx="350.0" cy="132.0" r="7" fill="#C2185B" stroke="#fff" stroke-width="2"/>
+<circle cx="90.0" cy="188.0" r="7" fill="#C2185B" stroke="#fff" stroke-width="2"/>
+<circle cx="130.0" cy="188.0" r="7" fill="#C2185B" stroke="#fff" stroke-width="2"/>
+<circle cx="170.0" cy="188.0" r="7" fill="#C2185B" stroke="#fff" stroke-width="2"/>
+<circle cx="210.0" cy="188.0" r="7" fill="#C2185B" stroke="#fff" stroke-width="2"/>
+<circle cx="250.0" cy="188.0" r="7" fill="#C2185B" stroke="#fff" stroke-width="2"/>
+<circle cx="290.0" cy="188.0" r="7" fill="#C2185B" stroke="#fff" stroke-width="2"/>
+<circle cx="330.0" cy="188.0" r="7" fill="#C2185B" stroke="#fff" stroke-width="2"/>
+<circle cx="370.0" cy="188.0" r="7" fill="#C2185B" stroke="#fff" stroke-width="2"/>
+<path d="M 430 160.0 L 430 160.0 L 438 154.0 L 444 190.0 L 450 112.0 L 456 178.0 L 464 160.0 L 482 160.0 L 488 150.0 L 494 200.0 L 500 98.0 L 506 182.0 L 514 160.0 L 534 160.0" fill="none" stroke="#C2185B" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="540" y="90" width="80" height="140" rx="12" fill="#fff" stroke="#14213D" stroke-width="3.5"/>
+<rect x="554" y="108" width="22" height="22" rx="5" fill="#E3E6F2"/>
+<rect x="584" y="108" width="22" height="22" rx="5" fill="#E3E6F2"/>
+<rect x="554" y="142" width="22" height="22" rx="5" fill="#E3E6F2"/>
+<rect x="584" y="142" width="22" height="22" rx="5" fill="#E3E6F2"/>
+<rect x="554" y="176" width="22" height="22" rx="5" fill="#E3E6F2"/>
+<rect x="584" y="176" width="22" height="22" rx="5" fill="#E3E6F2"/>
+<circle cx="595" cy="153" r="17" fill="none" stroke="#C2185B" stroke-width="3"/>
+<rect x="584" y="142" width="22" height="22" rx="5" fill="#C2185B"/>
+</svg>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stentrode: controlar un ordenador con el pensamiento</title>
+  <meta name="description" content="Trabajo de Fundamentos de IPO sobre el Stentrode de Synchron, una interfaz cerebro-ordenador que se implanta a través de una vena.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;700;800&display=swap">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header id="inicio" class="cabecera">
+    <div class="cabecera__texto">
+      <h1>Stentrode</h1>
+      <p class="lema">Una interfaz cerebro-ordenador que llega a la corteza motora a través de una vena, sin abrir el cráneo.</p>
+      <p>Lo desarrolla la empresa Synchron y permite a personas con parálisis grave escribir mensajes, navegar por internet o manejar un iPad solo con la intención de moverse.</p>
+      <p class="estado"><strong>Estado en noviembre de 2026:</strong> en ensayos clínicos en Estados Unidos, Australia y Canadá. Todavía no está a la venta.</p>
+    </div>
+    <img class="cabecera__ilustracion" src="img/stentrode-ilustracion.svg" width="640" height="192"
+         alt="Ilustración de una malla cilíndrica con dieciséis electrodos; la señal que captan sale en forma de picos y termina en un toque sobre la pantalla de una tableta.">
+  </header>
+
+  <nav class="menu" aria-label="Secciones de la página">
+    <ul>
+      <li><a href="#que-es">Qué es</a></li>
+      <li><a href="#por-que">Por qué lo he elegido</a></li>
+      <li><a href="#como-funciona">Cómo funciona</a></li>
+      <li><a href="#imagenes">Imágenes</a></li>
+      <li><a href="#evolucion">Evolución</a></li>
+      <li><a href="#mas-informacion">Más información</a></li>
+    </ul>
+  </nav>
+
+  <main id="contenido">
+
+    <section id="que-es" class="seccion">
+      <h2>Qué es</h2>
+      <p>El Stentrode es un implante con forma de <em>stent</em>, la malla metálica que se usa para mantener abiertas las arterias. A esa malla se le han añadido electrodos. En lugar de colocarse en el corazón, se lleva hasta una vena que pasa justo encima de la zona del cerebro que controla el movimiento. Desde ahí capta la actividad eléctrica que se produce cuando la persona <em>piensa</em> en moverse, aunque su cuerpo ya no pueda hacerlo.</p>
+      <p>Esa señal se convierte en órdenes para un ordenador, un móvil o una tableta: seleccionar, hacer clic, escribir. Es lo que se llama una <strong>interfaz cerebro-ordenador</strong> (BCI, por sus siglas en inglés).</p>
+
+      <dl class="ficha">
+        <div>
+          <dt>Fabricante</dt>
+          <dd>Synchron (Nueva York), surgida de la Universidad de Melbourne</dd>
+        </div>
+        <div>
+          <dt>Tipo de dispositivo</dt>
+          <dd>Interfaz cerebro-ordenador endovascular</dd>
+        </div>
+        <div>
+          <dt>Electrodos</dt>
+          <dd>16, sobre una malla de nitinol que se expande sola</dd>
+        </div>
+        <div>
+          <dt>Vía de implante</dt>
+          <dd>Catéter por la vena yugular, sin cirugía cerebral</dd>
+        </div>
+        <div>
+          <dt>Tiempo de colocación</dt>
+          <dd>Unos 20 minutos de mediana en el ensayo COMMAND</dd>
+        </div>
+        <div>
+          <dt>Dispositivos que controla</dt>
+          <dd>iPhone, iPad y Apple Vision Pro, además de ordenadores</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section id="por-que" class="seccion">
+      <h2>Por qué lo he elegido</h2>
+      <p>En la asignatura solemos dar por hecho que el usuario tiene manos para el ratón, dedos para la pantalla táctil o voz para el asistente. Para una persona con ELA o con una lesión medular alta, ninguno de esos canales funciona, y el ordenador pasa de ser una herramienta a ser una barrera.</p>
+      <p>El Stentrode añade un canal de entrada nuevo: la <strong>intención de movimiento</strong>. Lo que más me interesa desde el punto de vista de la IPO no es la proeza médica, sino que en 2025 Apple lo reconociera como un dispositivo de entrada nativo de sus sistemas, al mismo nivel que un teclado o una pantalla táctil. El pensamiento deja de ser un experimento de laboratorio y pasa a ser una forma más de interactuar.</p>
+
+      <h3>Beneficios que aporta</h3>
+      <ul class="beneficios">
+        <li><strong>Sin abrir el cráneo.</strong> Se coloca con las mismas técnicas de cateterismo que se usan para tratar un ictus. En el primer implante en Estados Unidos, el paciente se fue a casa a las 48 horas.</li>
+        <li><strong>Pensado para usarse en casa.</strong> No depende de un laboratorio ni de un técnico al lado: la persona lo usa en su día a día, tumbada o sentada.</li>
+        <li><strong>Funciona con las apps de siempre.</strong> Se apoya en Control por botón, la función de accesibilidad de Apple, así que sirve para mensajería, correo o el navegador sin necesidad de un programa especial.</li>
+        <li><strong>Señal estable con el tiempo.</strong> Como no penetra en el tejido cerebral, evita la cicatriz que con los años degrada a los electrodos que se insertan dentro del cerebro.</li>
+        <li><strong>Comunicación en los dos sentidos.</strong> El iPad le cuenta al sistema qué hay en pantalla, y eso le ayuda a interpretar mejor lo que el usuario quiere hacer.</li>
+      </ul>
+
+      <h3>Qué tiene que ver con la asignatura</h3>
+      <div class="tabla-con-scroll">
+        <table>
+          <caption>Conceptos de Fundamentos de IPO que aparecen en el Stentrode</caption>
+          <thead>
+            <tr>
+              <th scope="col">Concepto</th>
+              <th scope="col">Cómo aparece en el Stentrode</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Diseño universal</th>
+              <td>Cumple el uso equitativo y el bajo esfuerzo físico: da acceso a las mismas aplicaciones que usa cualquier persona sin exigir ningún movimiento.</td>
+            </tr>
+            <tr>
+              <th scope="row">Factores humanos: el sistema motor</th>
+              <td>Sustituye al sistema motor como canal de salida del usuario. La orden sale directamente de la corteza motora, sin pasar por los músculos.</td>
+            </tr>
+            <tr>
+              <th scope="row">Modelo de desarrollo de tareas de Norman</th>
+              <td>Acorta el camino entre formar la intención y ejecutar la acción: ya no hace falta traducir la intención a un movimiento físico que el cuerpo no puede hacer.</td>
+            </tr>
+            <tr>
+              <th scope="row">Realimentación</th>
+              <td>El usuario ve en pantalla el resultado de cada selección, y el dispositivo devuelve información al decodificador. Es un bucle cerrado.</td>
+            </tr>
+            <tr>
+              <th scope="row">Estándares y consistencia</th>
+              <td>Se conecta mediante un estándar (el protocolo BCI HID), igual que los teclados y ratones usan el estándar HID, en lugar de una integración hecha a medida.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="como-funciona" class="seccion">
+      <h2>Cómo funciona</h2>
+      <div class="funcionamiento">
+        <ol class="pasos">
+          <li>
+            <h3>Entrada por el cuello</h3>
+            <p>Un neurorradiólogo introduce un catéter por la vena yugular, como en otros procedimientos endovasculares.</p>
+          </li>
+          <li>
+            <h3>Junto a la corteza motora</h3>
+            <p>El catéter sube hasta el seno sagital superior, una vena grande que recorre la parte alta del cerebro. Allí la malla se expande y queda pegada a la pared del vaso, con sus 16 electrodos mirando hacia la corteza motora.</p>
+          </li>
+          <li>
+            <h3>Transmisión sin cables</h3>
+            <p>Un cable fino, bajo la piel, lleva la señal hasta una pequeña unidad implantada en el pecho, que la envía de forma inalámbrica al exterior.</p>
+          </li>
+          <li>
+            <h3>De la intención al clic</h3>
+            <p>Un decodificador externo traduce la intención de movimiento en órdenes. Gracias al protocolo BCI HID, el iPad o el iPhone la reciben como una entrada más, igual que un toque en la pantalla.</p>
+          </li>
+        </ol>
+        <figure class="diagrama">
+          <img src="img/como-funciona.svg" width="680" height="560"
+               alt="Vista lateral de una persona. Un catéter entra por la vena yugular del cuello y sube hasta la parte alta de la cabeza, donde queda el Stentrode. Un cable baja hasta una unidad en el pecho, que envía la señal sin cables a un iPad.">
+          <figcaption>Los números coinciden con los pasos. Ilustración propia.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="imagenes" class="seccion">
+      <h2>Imágenes</h2>
+      <div class="galeria">
+        <figure>
+          <img src="img/stentrode.jpg" width="928" height="618"
+               alt="El Stentrode sobre fondo blanco: una malla cilíndrica de hilos metálicos muy finos con pequeños electrodos repartidos por ella. Una barra de escala de 10 milímetros muestra que mide unos 3 centímetros.">
+          <figcaption>El Stentrode antes de implantarse. La barra de escala mide 10 mm. Foto: Synchron.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/sistema-bci.jpg" width="1392" height="928"
+               alt="Esquema del sistema de Synchron. Una persona sentada ante una tableta; tres círculos amplían las piezas: el Stentrode en lo alto de la cabeza, la unidad implantada en el pecho y un receptor externo sobre la mesa, que recibe la señal por Bluetooth y la envía a la tableta.">
+          <figcaption>Las tres piezas del sistema: el Stentrode, la unidad del pecho y el receptor externo que se comunica con la tableta. Imagen: Synchron.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="evolucion" class="seccion">
+      <h2>Evolución: de soplar por un tubo a pensar un clic</h2>
+      <p>El Stentrode no aparece de la nada. Es el último paso de una larga búsqueda de formas de usar un ordenador cuando el cuerpo no responde. Cada etapa ha intentado depender menos del movimiento que le queda al usuario.</p>
+
+      <ol class="cronologia">
+        <li>
+          <p class="anio">1924</p>
+          <span class="nodo"></span>
+          <div class="hecho">
+            <h3>Primer electroencefalograma</h3>
+            <p>Hans Berger registra por primera vez la actividad eléctrica del cerebro humano. Queda demostrado que el cerebro produce señales que se pueden medir desde fuera.</p>
+          </div>
+        </li>
+        <li>
+          <p class="anio">1960</p>
+          <span class="nodo"></span>
+          <div class="hecho">
+            <h3>POSSUM: controlar la casa soplando</h3>
+            <p>En el hospital de Stoke Mandeville (Reino Unido) se desarrolla un sistema que permite a personas con tetraplejia manejar el timbre, la luz, el teléfono o una máquina de escribir soplando y aspirando por un tubo. Sustituye a las manos, pero exige conservar el control de la boca y la respiración.</p>
+          </div>
+        </li>
+        <li>
+          <p class="anio">1973</p>
+          <span class="nodo"></span>
+          <div class="hecho">
+            <h3>Nace la «interfaz cerebro-ordenador»</h3>
+            <p>El informático Jacques Vidal usa por primera vez el término y propone utilizar las señales del cerebro como canal de comunicación entre persona y máquina.</p>
+          </div>
+        </li>
+        <li>
+          <p class="anio">Años 90</p>
+          <span class="nodo"></span>
+          <div class="hecho">
+            <h3>Pulsadores adaptados y control con la mirada</h3>
+            <p>Se extienden los pulsadores que se activan con cualquier parte del cuerpo y los comunicadores que siguen el movimiento de los ojos. Funcionan, pero siguen dependiendo de algún movimiento voluntario, y la mirada cansa con el uso prolongado.</p>
+          </div>
+        </li>
+        <li>
+          <p class="anio">2004</p>
+          <span class="nodo"></span>
+          <div class="hecho">
+            <h3>BrainGate: el primer implante para mover un cursor</h3>
+            <p>Un paciente con tetraplejia controla un ordenador con un chip de unos 100 electrodos (la matriz de Utah) clavado en la corteza. Funciona, pero hay que abrir el cráneo y el conector atraviesa la piel.</p>
+          </div>
+        </li>
+        <li class="hito">
+          <p class="anio">2019</p>
+          <span class="nodo"></span>
+          <div class="hecho">
+            <h3>Primer Stentrode en una persona</h3>
+            <p>En Melbourne (Australia), dentro del estudio SWITCH, por primera vez una interfaz cerebro-ordenador llega al cerebro a través de los vasos sanguíneos, sin cirugía abierta.</p>
+          </div>
+        </li>
+        <li>
+          <p class="anio">2021</p>
+          <span class="nodo"></span>
+          <div class="hecho">
+            <h3>Un tuit escrito con el pensamiento</h3>
+            <p>Un participante del estudio publica el primer mensaje en Twitter escrito directamente con la mente.</p>
+          </div>
+        </li>
+        <li>
+          <p class="anio">2022</p>
+          <span class="nodo"></span>
+          <div class="hecho">
+            <h3>Primer implante en Estados Unidos</h3>
+            <p>El 6 de julio se coloca en el hospital Mount Sinai de Nueva York. Arranca así COMMAND, el primer ensayo autorizado por la FDA para una interfaz cerebro-ordenador implantada de forma permanente.</p>
+          </div>
+        </li>
+        <li>
+          <p class="anio">2024</p>
+          <span class="nodo"></span>
+          <div class="hecho">
+            <h3>Resultados de seguridad</h3>
+            <p>Tras un año de seguimiento, COMMAND no registra efectos adversos graves relacionados con el cerebro ni con los vasos sanguíneos.</p>
+          </div>
+        </li>
+        <li class="hito">
+          <p class="anio">2025</p>
+          <span class="nodo"></span>
+          <div class="hecho">
+            <h3>El pensamiento, entrada nativa de Apple</h3>
+            <p>En mayo Apple presenta el protocolo BCI HID y en agosto se muestra por primera vez un iPad controlado solo con el pensamiento, por un participante con ELA. En noviembre, Synchron consigue 200 millones de dólares para el ensayo final.</p>
+          </div>
+        </li>
+        <li>
+          <p class="anio">2026</p>
+          <span class="nodo"></span>
+          <div class="hecho">
+            <h3>Nueva generación</h3>
+            <p>Arrancan nuevos ensayos en Canadá y en Australia, este último con la versión mejorada del implante, mientras la empresa prepara el ensayo pivotal: el último paso antes de pedir la aprobación para venderlo.</p>
+          </div>
+        </li>
+      </ol>
+
+      <h3>A qué sustituye y cómo lo mejora</h3>
+      <div class="tabla-con-scroll">
+        <table class="comparativa">
+          <caption>Comparación con los sistemas que usan hoy las personas con parálisis grave</caption>
+          <thead>
+            <tr>
+              <th scope="col">Sistema</th>
+              <th scope="col">Qué necesita del usuario</th>
+              <th scope="col">Intervención</th>
+              <th scope="col">Limitaciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Pulsador o soplido</th>
+              <td>Algún movimiento voluntario o el control de la respiración</td>
+              <td>Ninguna</td>
+              <td>Lento; deja de servir si se pierde ese último movimiento</td>
+            </tr>
+            <tr>
+              <th scope="row">Seguimiento ocular</th>
+              <td>Control fino de los ojos</td>
+              <td>Ninguna</td>
+              <td>Cansa con el uso continuado y depende de la luz y de la postura</td>
+            </tr>
+            <tr>
+              <th scope="row">Electrodos dentro del cerebro (BrainGate, Neuralink)</th>
+              <td>Solo la intención</td>
+              <td>Cirugía abierta del cráneo</td>
+              <td>Muy precisos, pero el tejido cicatriza alrededor y la señal puede empeorar con los años</td>
+            </tr>
+            <tr class="comparativa__destacada">
+              <th scope="row">Stentrode</th>
+              <td>Solo la intención</td>
+              <td>Cateterismo por la yugular; alta en unos dos días</td>
+              <td>Con 16 electrodos es menos preciso que los implantes dentro del cerebro, y aún está en ensayo clínico</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>La gran mejora del Stentrode no es la precisión, donde los implantes que penetran en el cerebro siguen por delante, sino el equilibrio entre riesgo y utilidad: ofrece el mismo canal de entrada, la intención, con un procedimiento mucho más sencillo y fácil de llevar a muchos hospitales.</p>
+    </section>
+
+    <section id="mas-informacion" class="seccion">
+      <h2>Más información</h2>
+      <ul class="enlaces">
+        <li>
+          <a href="https://synchron.com/">Web oficial de Synchron</a>
+            <p>La empresa que desarrolla el Stentrode: tecnología, ensayos clínicos y noticias.</p>
+        </li>
+        <li>
+          <a href="https://www.macrumors.com/2025/08/04/watch-brain-controlled-ipad/">Vídeo del iPad controlado con el pensamiento (MacRumors, en inglés)</a>
+            <p>La primera demostración pública del protocolo BCI HID de Apple, en agosto de 2025.</p>
+        </li>
+        <li>
+          <a href="https://spectrum.ieee.org/brain-implant-close-to-market">Entrevista al fundador, Tom Oxley (IEEE Spectrum, en inglés)</a>
+            <p>Cómo nació la idea y por qué apostaron por los vasos sanguíneos.</p>
+        </li>
+        <li>
+          <a href="https://www.massdevice.com/synchron-command-study-results-stentrode-bci-implant/">Resultados del ensayo COMMAND (MassDevice, en inglés)</a>
+            <p>Datos de seguridad tras un año con el implante en seis pacientes.</p>
+        </li>
+        <li>
+          <a href="https://worksinprogress.co/issue/brain-computer-interfaces/">Historia de las interfaces cerebro-ordenador (Works in Progress, en inglés)</a>
+            <p>Un repaso a un siglo de investigación, del primer electroencefalograma a los implantes actuales.</p>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <p>Trabajo de Fundamentos de Interacción Persona-Ordenador. Universidad Pontificia de Salamanca, curso 2026-2027.</p>
+    <p>Autor: Pablo García Fidalgo</p>
+    <p>Tipografía: Atkinson Hyperlegible Next, diseñada por el Braille Institute para facilitar la lectura a personas con baja visión.</p>
+    <p><a href="#inicio">Volver arriba</a></p>
+  </footer>
+</body>
+</html>
